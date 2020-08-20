@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:padding="15dp"
+    android:background="@drawable/round_edit_text">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_toStartOf="@+id/date"
+        android:id="@+id/id1"
+        android:layout_marginEnd="5dp"
+        android:layout_alignBaseline="@+id/date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="12-08-2020"
+        android:textColor="@android:color/black"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:id="@+id/date"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus No. "
+        android:id="@+id/id4"
+        android:layout_alignBaseline="@+id/id1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/id4"
+        android:text="1005"
+        android:id="@+id/busid"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/id1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/date"
+        android:id="@+id/id2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        tools:text="TATARNAGAR"
+        android:layout_below="@id/id2"
+        android:id="@+id/src"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/date"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/id3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        tools:text="SAKSHI"
+        android:layout_below="@id/id2"
+        android:id="@+id/dst"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/src"
+        android:layout_toStartOf="@id/fare"
+        android:text="Fare  ₹ "
+        android:id="@+id/id5"
+        android:layout_alignBaseline="@id/fare"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/src"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        tools:text="250"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/fare"/>
+
+
+</RelativeLayout>
